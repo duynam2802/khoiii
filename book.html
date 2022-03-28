@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt sân</title>
+
+    <link rel="stylesheet" href="./css/book.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+
+<body>
+
+
+    <main>
+        <h2>ĐẶT SÂN</h2>
+
+        <form>
+            <div class="atb">
+                <p>Tên sân : </p>
+                <p id="namesan">Sân bóng nhân tạo Trung hòa</p>
+            </div>
+
+            <div class="atb">
+                <p>Địa chỉ : </p>
+                <p id="address">Ngõ 55-57, đường Trần Phú, Hà Đông(Trong trường đại học Nghệ thuật Trung Ương </p>
+            </div>
+
+            <div class="atb">
+                <p>Liên hệ : </p>
+                <p id="lienhe">0962332538-Anh Hoàng</p>
+            </div>
+
+            <label for="namemember">Nhập tên : </label>
+            <input type="text" name="namemember" id="namemember" onchange="ten()" placeholder="Nguyễn Khắc Minh Khôi" max="50" required>
+            <p style="color: red; display:none;" id="errorname">Hãy điền tên của bạn</p>
+            <br>
+
+            <label for="call"> Số điện thoại : </label>
+            <input type="text" name="call" id="call" maxlength="50" onchange="tel()" required>
+            <p id="errortel" style="color: red; display: none;">Hãy điền số điện thoại của bạn</p>
+            <br>
+            <label for="timeset"> Chọn khung giờ bắt đầu : </label>
+
+            <select name="timeset" id="timeset" onchange="set(),sum()" required>
+            
+                    <option value="" selected>--Chọn khung giờ--</option>
+                    <option value="1">06:00 - 16:00: 300k/h</option>
+                    <option value="2">16:00 - 17:30: 600k/h</option>
+                    <option value="3">17:30 - 20:30: 800k/h</option>
+                    <option value="4">20:30 - 22:00: 400k/h</option>
+                
+                </select>
+            <p id="errorset" style="color: red; display: none;">Hãy chọn khung giờ muốn đặt sân</p>
+            <br>
+
+            <label for="timezone">Số giờ :</label>
+            <input type="text" name="timezone" id="timezone" onchange="zone(),sum()" required>
+            <p id="errorzone2" style="color: red; display: none;">Hãy nhập số giờ muốn đặt sân</p>
+            <p id="errorzone" style="color:red; display: none;">Chỉ được phép nhập số dương</p>
+            <br>
+
+            <label for="member">Số người chơi : </label>
+            <input type="number" name="member" id="member" min="0" onchange="members()" required>
+            <p id="errormem" style="color:red; display: none;">Hãy nhập số người</p>
+            <br>
+
+            <label for="team">Số đội chơi :</label>
+            <input type="number" name="team" id="team" value="2" min="0" onchange="teamnum(),sum()" required>
+            <p id="errorteam" style="color:red; display: none;">Hãy nhập số đội chơi.</p>
+            <br>
+
+            <label for="radiobutton">Đặt định kì</label>
+            <label for="radio1" class="check"><input type="radio" name="radio" id="radio1">Không</label>
+            <label for="radio2" class="check"><input type="radio" name="radio" id="radio2" checked required>Hàng tuần</label>
+            <label for="radio3" class="check"><input type="radio" name="radio" id="radio3">Hàng tháng</label>
+            <br>
+
+            <label for="checkbox" id="checkbox">Dịch vụ thêm : </label>
+            <label for="chose1" class="check"><input type="checkbox" name="chose1" id="chose1" value="1">Nước uống miễn phí</label><br>
+            <label for="chose2" class="check" id="check1"><input type="checkbox" name="chose2" id="chose2" value="2" onchange="sum()">Thuê đồng phục (300k/đội)</label><br>
+            <label for="chose3" class="check" id="chekc2"><input type="checkbox" name="chose3" id="chose3" value="3" onchange="sum()">Thuê trọng tài(200k/h)</label><br>
+
+            <div id="sumclass">
+                <p id="sum">Tổng tiền</p>
+                <p id="sumsend">0</p>
+                <p>VNĐ</p>
+            </div>
+            <input type="submit" value="Đặt sân" name="submit" id="check" onclick="ten(),tel(),set(),zone(),members(),teamnum(),sum()">
+        </form>
+
+    </main>
+    <footer>
+        <div id="thongtin">
+            <h3>THUÊ SÂN BÓNG</h3>
+            <nav>
+                <ul>
+                    <li><strong>Liên hệ: </strong> <a href="mailto:Thuesanbong@gmail.com">Thuesanbong@gmail.com</a> </li>
+                    <li><strong>Facebook: </strong> <a href="http://www.facebook.com/khoijek">Thuê sân bóng</a> </li>
+                    <li><strong>Call me: </strong> <a href="tellto:0865283436">08665283436</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="link">
+            <h3>THÔNG TIN</h3>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="book.html">Đặt sân</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </footer>
+</body>
+<script src="js/book.js"></script>
+
+</html>

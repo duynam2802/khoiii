@@ -1,0 +1,67 @@
+/* MAIN INDEX */
+
+
+/* Trunghoa */
+
+#trunghoa,
+#hongbay,
+#longthanh,
+.anhsan {
+    padding: 20px;
+    margin: 10px;
+    border: #98ab9a inset 5px;
+    display: inline-grid;
+}
+
+#trunghoa>figure img {
+    width: 52vw;
+}
+
+#trunghoa>article {
+    width: 64vw;
+}
+
+.anhsan img {
+    width: 23vw;
+}
+
+
+/* Hongbay */
+
+#hongbay>figure img {
+    width: 52vw;
+}
+
+#hongbay>article {
+    width: 64vw;
+}
+
+
+/* LongThanh */
+
+#longthanh>figure img {
+    width: 52vw;
+}
+
+#longthanh>article {
+    width: 64vw;
+}
+
+.datsan {
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.datsan>a {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    border: black double 3px;
+    border-radius: 10px;
+}
+
+.datsan>a:hover {
+    background-color: chartreuse;
+    color: rgba(28, 26, 173, 0.884);
+}

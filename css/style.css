@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: fontprovip;
+    src: url(../font/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+    font-family: fontgt;
+    src: url(../font/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: fontmenu;
+    src: url(../font/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: fontmain;
+    src: url(../font/Glory-VariableFont_wght.ttf);
+}
+
+
+/* HEAD */
+
+html {
+    font-size: large;
+    font-family: fontmain;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: .83em;
+}
+
+h6 {
+    font-size: .67em;
+}
+
+body {
+    color: black;
+    background-color: #79ef526b;
+}
+
+.navbar {
+    background-color: #22c20698 !important;
+}
+
+.navbar-toggler {
+    border: black solid 2px !important;
+}
+
+.nav-item {
+    text-align: center;
+    width: 25vw;
+}
+
+.nav-link {
+    color: black !important;
+    font-family: fontmenu;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+    width: 30vw;
+    margin: 1% 5% 1% 0;
+    padding: 1% 5%;
+    text-transform: uppercase;
+}
+
+
+/* 
+#menu {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 5%;
+}
+
+#menu li {
+    list-style: none;
+    float: left;
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+}
+
+#menu>ul a {
+    font-family: fontmenu;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    width: 100px;
+    margin: 1% 5% 1% 0;
+    padding: 1% 5%;
+    font-size: medium;
+    text-transform: uppercase;
+} */
+
+#gioithieu {
+    position: relative;
+    display: inline-block;
+    background: url(../Images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.897);
+}
+
+#gioithieu>div {
+    box-sizing: border-box;
+    padding: 2% 0px 0px 3%;
+    width: 80vw;
+}
+
+h1 {
+    box-sizing: border-box;
+    padding-bottom: 35px;
+    font-size: 3em;
+    font-family: fontprovip;
+}
+
+#gioithieu>div>p {
+    font-size: larger;
+    font-family: fontgt;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: rgba(133, 133, 133, 0.815);
+}
+
+#thongtin,
+#link {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px 50px 0px 150px;
+}
+
+footer nav {
+    padding-top: 20px;
+}
+
+footer nav>ul li {
+    box-sizing: border-box;
+    list-style: none;
+    font-size: large;
+    padding: 5px;
+}
+
+footer nav>ul a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+/* Hover lia chuột vào */
+
+#menu .nav-link:hover {
+    background: rgb(12, 134, 28);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+footer nav>ul a:hover {
+    border: black solid 1px;
+    color: blue;
+    border-radius: 15px;
+}

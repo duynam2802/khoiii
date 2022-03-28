@@ -1,0 +1,49 @@
+@media screen and (max-width: 992px) {
+    #gioithieu p {
+        display: none;
+    }
+    .anhsan {
+        display: none;
+    }
+    #trunghoa>article,
+    #hongbay>article,
+    #longthanh>article {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav-link:hover {
+        background: rgb(12, 134, 28);
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 20px;
+        width: 91vw;
+        text-align: center;
+    }
+    h1 {
+        width: 90vw;
+        font-size: 2rem;
+    }
+    #trunghoa>article,
+    #hongbay>article,
+    #longthanh>article {
+        width: 80vw;
+    }
+    footer {
+        text-align: center;
+    }
+    form {
+        padding: 0;
+    }
+    label,
+    .atb>p {
+        display: block;
+        margin: 0;
+        width: 90vw;
+    }
+    input,
+    select {
+        width: 80vw;
+        height: 8vh;
+    }
+}

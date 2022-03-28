@@ -1,0 +1,70 @@
+main {
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+    font-family: fontgt;
+}
+
+p {
+    display: inline-block;
+}
+
+form {
+    font-size: larger;
+    font-weight: 500;
+    padding-left: 9vw;
+}
+
+label,
+.atb>p:first-child,
+#sum {
+    width: 21%;
+    display: inline-block;
+    margin: 5px 0px 2px 0px;
+    font-weight: bolder;
+}
+
+input,
+select {
+    width: 30vw;
+    height: 20px;
+    margin: 5px;
+    border: black ridge 2px;
+    font-size: large;
+}
+
+.check {
+    width: auto;
+    display: block;
+}
+
+select {
+    height: 40px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    display: inline-block;
+    width: 20px;
+    margin-right: 30px;
+    margin-left: 13vw;
+}
+
+input[type=submit] {
+    width: 9rem;
+    height: 3rem;
+    margin: 47px 0px 19px 10rem;
+    background-color: rgb(7, 194, 7);
+    font-weight: bolder;
+}
+
+#sumclass {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(3, 110, 3);
+}

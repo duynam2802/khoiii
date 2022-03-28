@@ -1,0 +1,12 @@
+h2 {
+    display: block;
+    text-align: center;
+    font-family: fontmenu;
+    font-size: xx-large;
+    padding: 15px 0px;
+    color: #3f6b05;
+}
+
+main img {
+    width: 90%;
+}
